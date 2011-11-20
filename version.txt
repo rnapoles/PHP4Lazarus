@@ -1,0 +1,19 @@
+ Compiler    Version Compiler Defined Symbol
+  Delphi XE     22    VER220
+  Delphi 2010   21    VER210
+  Delphi 2009   20    VER200
+  Delphi 2007   18.5  VER185
+  Delphi 2006   18    VER180
+  Delphi 2005   17    VER170
+  Delphi 8      16    VER160
+  Delphi 7      15    VER150
+  Delphi 6      14    VER140
+  C++Builder 5        VER130 BCB
+  Delphi 5            VER130
+  C++Builder 4        VER125
+  Delphi 4            VER120
+  C++Builder 3        VER110
+  Delphi 3            VER100
+  C++Builder 1        VER93
+  Delphi 2            VER90
+  Delphi 1            VER80

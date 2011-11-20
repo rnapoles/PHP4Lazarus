@@ -1,0 +1,93 @@
+object Form1: TForm1
+  Left = 257
+  Height = 240
+  Top = 152
+  Width = 320
+  ActiveControl = Memo1
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  OnCreate = FormCreate
+  LCLVersion = '0.9.28.2'
+  object Memo1: TMemo
+    Left = 0
+    Height = 105
+    Top = 0
+    Width = 320
+    Align = alClient
+    Lines.Strings = (
+      'echo "Before function declaration...<br>\n";'
+      ''
+      'function print_something_multiple_times($something,$times)'
+      '{'
+      '  echo "----<br>\nIn function, printing the string \"$something\" '
+      '$times times<br>\n";'
+      '  for ($i=0; $i<$times; $i++) {'
+      '    echo "$i) $something<br>\n";'
+      '  }'
+      '  echo "Done with function...<br>\n-----<br>\n";'
+      '}'
+      ''
+      'function some_other_function()'
+      '{'
+      '  echo "This is some other function, to ensure more than just '
+      'one function works fine...<br>\n";'
+      '}'
+      ''
+      ''
+      'echo "After function declaration...<br>\n";'
+      ''
+      'echo "Calling function for the first time...<br>\n";'
+      'print_something_multiple_times($test,10);'
+      'echo "Returned from function call...<br>\n";'
+      ''
+      'echo "Calling the function for the second time...<br>\n";'
+      'print_something_multiple_times("This like, really works and '
+      'stuff...",3);'
+      'echo "Returned from function call...<br>\n";'
+      ''
+      'some_other_function();'
+      ''
+      '$test = "I don''t believe";'
+      '$tool = "PHP";'
+    )
+    TabOrder = 0
+  end
+  object Memo2: TMemo
+    Left = 0
+    Height = 80
+    Top = 110
+    Width = 320
+    Align = alBottom
+    TabOrder = 1
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 190
+    Width = 320
+    Align = alBottom
+    Caption = 'Panel1'
+    ClientHeight = 50
+    ClientWidth = 320
+    TabOrder = 2
+    object Button1: TButton
+      Left = 8
+      Height = 25
+      Top = 16
+      Width = 75
+      Caption = 'Button1'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+  end
+  object Splitter1: TSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 5
+    Top = 105
+    Width = 320
+    Align = alBottom
+    ResizeAnchor = akBottom
+  end
+end

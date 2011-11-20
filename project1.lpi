@@ -1,0 +1,460 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="7"/>
+    <General>
+      <MainUnit Value="0"/>
+      <TargetFileExt Value=""/>
+      <Icon Value="0"/>
+      <UseXPManifest Value="True"/>
+      <ActiveEditorIndexAtStart Value="0"/>
+    </General>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T 'Lazarus Run Output' -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="IDEIntf"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="37">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="project1"/>
+        <CursorPos X="1" Y="15"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <CursorPos X="7" Y="62"/>
+        <TopLine Value="49"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="ZENDAPI.pas"/>
+        <UnitName Value="zendAPI"/>
+        <CursorPos X="3" Y="19"/>
+        <TopLine Value="7"/>
+        <UsageCount Value="9"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="PHPAPI.pas"/>
+        <UnitName Value="phpAPI"/>
+        <CursorPos X="2" Y="20"/>
+        <TopLine Value="9"/>
+        <UsageCount Value="9"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value=""/>
+        <UsageCount Value="9"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="PHPCommon.pas"/>
+        <UnitName Value="PHPCommon"/>
+        <CursorPos X="25" Y="9"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="11"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="DelphiFunctions.pas"/>
+        <UnitName Value="DelphiFunctions"/>
+        <CursorPos X="1" Y="733"/>
+        <TopLine Value="724"/>
+        <UsageCount Value="11"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="logos.pas"/>
+        <UnitName Value="logos"/>
+        <CursorPos X="22" Y="767"/>
+        <TopLine Value="7"/>
+        <UsageCount Value="9"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="php4AppIntf.pas"/>
+        <UnitName Value="php4AppIntf"/>
+        <CursorPos X="51" Y="22"/>
+        <TopLine Value="7"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="php4AppUnit.pas"/>
+        <UnitName Value="php4AppUnit"/>
+        <CursorPos X="10" Y="747"/>
+        <TopLine Value="734"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="php4delphi.pas"/>
+        <UnitName Value="php4delphi"/>
+        <CursorPos X="14" Y="527"/>
+        <TopLine Value="515"/>
+        <EditorIndex Value="4"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="php4DelphiReg.pas"/>
+        <UnitName Value="php4DelphiReg"/>
+        <CursorPos X="17" Y="98"/>
+        <TopLine Value="18"/>
+        <UsageCount Value="9"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="php4DelphiWeb.pas"/>
+        <UnitName Value="php4DelphiWeb"/>
+        <CursorPos X="3" Y="55"/>
+        <TopLine Value="44"/>
+        <UsageCount Value="9"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="phpAbout.pas"/>
+        <UnitName Value="phpAbout"/>
+        <CursorPos X="3" Y="63"/>
+        <TopLine Value="54"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="phpApp.pas"/>
+        <UnitName Value="phpApp"/>
+        <CursorPos X="18" Y="22"/>
+        <TopLine Value="9"/>
+        <UsageCount Value="10"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="phpClass.pas"/>
+        <UnitName Value="phpClass"/>
+        <CursorPos X="55" Y="693"/>
+        <TopLine Value="678"/>
+        <UsageCount Value="11"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="phpCustomLibrary.pas"/>
+        <UnitName Value="PHPCustomLibrary"/>
+        <CursorPos X="49" Y="19"/>
+        <TopLine Value="10"/>
+        <UsageCount Value="9"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="PHPFunctions.pas"/>
+        <UnitName Value="PHPFunctions"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="9"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="PHPLibrary.pas"/>
+        <UnitName Value="phpLibrary"/>
+        <CursorPos X="49" Y="18"/>
+        <TopLine Value="10"/>
+        <UsageCount Value="9"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="phpModules.pas"/>
+        <UnitName Value="phpModules"/>
+        <CursorPos X="23" Y="516"/>
+        <TopLine Value="508"/>
+        <UsageCount Value="10"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="PHPProjectWizard.pas"/>
+        <UnitName Value="PHPProjectWizard"/>
+        <CursorPos X="6" Y="20"/>
+        <TopLine Value="100"/>
+        <UsageCount Value="9"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="PHPTypes.pas"/>
+        <UnitName Value="PHPTypes"/>
+        <CursorPos X="8" Y="19"/>
+        <TopLine Value="9"/>
+        <UsageCount Value="10"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="phpWeb.pas"/>
+        <UnitName Value="phpWeb"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="19"/>
+        <UsageCount Value="9"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="zend_dynamic_array.pas"/>
+        <UnitName Value="zend_dynamic_array"/>
+        <CursorPos X="20" Y="18"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="zendapi.pas"/>
+        <UnitName Value="zendAPI"/>
+        <CursorPos X="27" Y="25"/>
+        <TopLine Value="14"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="zendTypes.pas"/>
+        <UnitName Value="zendTypes"/>
+        <CursorPos X="15" Y="14"/>
+        <TopLine Value="3"/>
+        <UsageCount Value="10"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="..\..\..\usr\lib\lazarus\0.9.28.2\lcl\lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <CursorPos X="3" Y="73"/>
+        <TopLine Value="63"/>
+        <UsageCount Value="11"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="..\..\..\usr\share\fpcsrc\2.2.4\rtl\inc\systemh.inc"/>
+        <CursorPos X="19" Y="428"/>
+        <TopLine Value="418"/>
+        <UsageCount Value="9"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="phpapi.pas"/>
+        <UnitName Value="phpAPI"/>
+        <CursorPos X="25" Y="6"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="11"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="PHPCustomLibrary.pas"/>
+        <UnitName Value="PHPCustomLibrary"/>
+        <CursorPos X="18" Y="6"/>
+        <TopLine Value="121"/>
+        <UsageCount Value="10"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="phpFunctions.pas"/>
+        <UnitName Value="phpFunctions"/>
+        <CursorPos X="24" Y="9"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="..\..\..\usr\lib\lazarus\0.9.28.2\lcl\include\winapih.inc"/>
+        <CursorPos X="31" Y="170"/>
+        <TopLine Value="160"/>
+        <UsageCount Value="10"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="..\..\..\usr\share\fpcsrc\2.2.4\packages\fcl-base\src\syncobjs.pp"/>
+        <UnitName Value="syncobjs"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="17"/>
+        <UsageCount Value="10"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="..\..\..\usr\share\fpcsrc\2.2.4\rtl\inc\dynlibs.pas"/>
+        <UnitName Value="dynlibs"/>
+        <CursorPos X="13" Y="19"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="phpLibrary.pas"/>
+        <UnitName Value="phpLibrary"/>
+        <CursorPos X="18" Y="18"/>
+        <TopLine Value="9"/>
+        <UsageCount Value="10"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="..\..\..\usr\share\fpcsrc\2.2.4\rtl\inc\threadh.inc"/>
+        <CursorPos X="11" Y="145"/>
+        <TopLine Value="135"/>
+        <UsageCount Value="10"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="..\..\..\usr\share\fpcsrc\2.2.4\rtl\linux\sysosh.inc"/>
+        <CursorPos X="22" Y="28"/>
+        <TopLine Value="18"/>
+        <UsageCount Value="10"/>
+      </Unit36>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="79" Column="37" TopLine="69"/>
+      </Position1>
+      <Position2>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="1255" Column="30" TopLine="1245"/>
+      </Position2>
+      <Position3>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="79" Column="37" TopLine="69"/>
+      </Position3>
+      <Position4>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="1255" Column="20" TopLine="1245"/>
+      </Position4>
+      <Position5>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="20" Column="1" TopLine="1"/>
+      </Position5>
+      <Position6>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="1255" Column="38" TopLine="1245"/>
+      </Position6>
+      <Position7>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="77" Column="38" TopLine="69"/>
+      </Position7>
+      <Position8>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="71" Column="28" TopLine="69"/>
+      </Position8>
+      <Position9>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="77" Column="38" TopLine="69"/>
+      </Position9>
+      <Position10>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="76" Column="15" TopLine="69"/>
+      </Position10>
+      <Position11>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="525" Column="20" TopLine="515"/>
+      </Position11>
+      <Position12>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="10" Column="42" TopLine="1"/>
+      </Position12>
+      <Position13>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="525" Column="20" TopLine="27"/>
+      </Position13>
+      <Position14>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="527" Column="64" TopLine="517"/>
+      </Position14>
+      <Position15>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="565" Column="67" TopLine="555"/>
+      </Position15>
+      <Position16>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="592" Column="122" TopLine="582"/>
+      </Position16>
+      <Position17>
+        <Filename Value="php4AppIntf.pas"/>
+        <Caret Line="15" Column="35" TopLine="7"/>
+      </Position17>
+      <Position18>
+        <Filename Value="zendapi.pas"/>
+        <Caret Line="652" Column="28" TopLine="650"/>
+      </Position18>
+      <Position19>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="20" Column="1" TopLine="1"/>
+      </Position19>
+      <Position20>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="597" Column="34" TopLine="582"/>
+      </Position20>
+      <Position21>
+        <Filename Value="php4AppIntf.pas"/>
+        <Caret Line="21" Column="54" TopLine="7"/>
+      </Position21>
+      <Position22>
+        <Filename Value="php4delphi.pas"/>
+        <Caret Line="7" Column="40" TopLine="1"/>
+      </Position22>
+      <Position23>
+        <Filename Value="zendapi.pas"/>
+        <Caret Line="8" Column="55" TopLine="1"/>
+      </Position23>
+      <Position24>
+        <Filename Value="zendapi.pas"/>
+        <Caret Line="30" Column="9" TopLine="16"/>
+      </Position24>
+      <Position25>
+        <Filename Value="zendapi.pas"/>
+        <Caret Line="32" Column="9" TopLine="16"/>
+      </Position25>
+      <Position26>
+        <Filename Value="zendapi.pas"/>
+        <Caret Line="53" Column="58" TopLine="43"/>
+      </Position26>
+      <Position27>
+        <Filename Value="zendapi.pas"/>
+        <Caret Line="7" Column="37" TopLine="1"/>
+      </Position27>
+      <Position28>
+        <Filename Value="zendapi.pas"/>
+        <Caret Line="24" Column="9" TopLine="14"/>
+      </Position28>
+      <Position29>
+        <Filename Value="zendapi.pas"/>
+        <Caret Line="26" Column="9" TopLine="14"/>
+      </Position29>
+      <Position30>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="17" Column="14" TopLine="1"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="8"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="project1"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)\"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      <LCLWidgetType Value="gtk2"/>
+    </SearchPaths>
+    <Linking>
+      <LinkSmart Value="True"/>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Source Value="project1.lpr"/>
+        <Line Value="15"/>
+      </Item1>
+    </BreakPoints>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
