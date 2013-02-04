@@ -1,0 +1,69 @@
+here are my steps to install httpd and php:
+1. yum install httpd
+    yum install httpd-devel
+    pecl install apc
+2. cd /root/Downloads/php-5.4.10
+    ./configure --enable-session --enable-shared=yes --enable-embed=shared --enable-          maintainer-zts --with-tsrm-pthreads --with-apxs2 --disable-cli
+    make
+    make clean
+    make install
+3. ./configure --enable-session --enable-maintainer-zts --enable-safe-mode --enable-static --disable-cli
+    make
+    make install
+    chmod 775 libs/libphp5.so
+    cp libs/libphp5.so /usr/lib/libphp5.so
+ 4. add following lines to php.ini
+LoadModule php5_module modules/libphp5.so
+
+AddHandler php5-script .php
+AddType text/html .php
+#inserted by jp#
+AddType application/x-httpd-php .php .inc .php5 .php4 .php3 .phtml
+
+5. modify phpapi.pas:
+{$IFNDEF PHP540}
+  php_start_ob_buffer: function  (output_handler : pzval; chunk_size : uint; erase : boolean; TSRMLS_DC : pointer) : integer; cdecl;
+  php_start_ob_buffer_named: function  (const output_handler_name : PAnsiChar;  chunk_size : uint; erase : boolean; TSRMLS_DC : pointer) : integer; cdecl;
+  php_end_ob_buffer: procedure (send_buffer : boolean; just_flush : boolean; TSRMLS_DC : pointer); cdecl;
+  php_end_ob_buffers: procedure (send_buffer : boolean; TSRMLS_DC : pointer); cdecl;
+  php_ob_get_buffer: function  (p : pzval; TSRMLS_DC : pointer) : integer; cdecl;
+  php_ob_get_length: function  (p : pzval; TSRMLS_DC : pointer) : integer; cdecl;
+  php_start_implicit_flush: procedure (TSRMLS_D : pointer); cdecl;
+  php_end_implicit_flush: procedure (TSRMLS_D : pointer); cdecl;
+  php_get_output_start_filename: function  (TSRMLS_D : pointer) : PAnsiChar; cdecl;
+  php_get_output_start_lineno: function (TSRMLS_D : pointer) : integer; cdecl;
+  php_ob_handler_used: function (handler_name : PAnsiChar; TSRMLS_DC : pointer) : integer; cdecl;
+  php_ob_init_conflict: function (handler_new : PAnsiChar; handler_set : PAnsiChar; TSRMLS_DC : pointer) : integer; cdecl;
+  php_body_write: function (const str : PAnsiChar; str_length: uint; TSRMLS_DC : pointer) : integer; cdecl;
+  php_header_write: function (const str : PAnsiChar; str_length: uint; TSRMLS_DC : pointer) : integer; cdecl;
+{$ENDIF}
+......
+
+after above acts, the following function works fine:
+
+{$IFDEF PHP510}
+procedure encryptext (ht : integer; return_value : pzval;  return_value_ptr : pointer; this_ptr : pzval;
+   return_value_used : integer; TSRMLS_DC : pointer); cdecl;
+{$ELSE}
+procedure encryptext (ht : integer; return_value : pzval; this_ptr : pzval;
+   return_value_used : integer; TSRMLS_DC : pointer); cdecl;
+{$ENDIF}
+var
+  rtnstr:string;
+  Param: pzval_array;
+begin
+  if ht < 1 then
+  begin
+    zend_wrong_param_count(TSRMLS_DC);
+    Exit;
+  end;
+
+  if ( not (zend_get_parameters_ex(ht, Param) = SUCCESS )) then
+  begin
+     zend_wrong_param_count(TSRMLS_DC);
+     Exit;
+   end;
+
+  rtnstr := param[0]^.value.str.val;
+  ZVAL_STRING(return_value,pansichar(rtnstr),true);
+end;
