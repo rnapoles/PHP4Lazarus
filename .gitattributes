@@ -1,0 +1,12 @@
+#*.pas linguist-detectable=false
+*.pas linguist-language=Pascal
+*.pp  linguist-language=Pascal
+*.p   linguist-language=Pascal
+*.inc linguist-language=Pascal
+*.dfm linguist-language=Pascal
+*.lfm linguist-language=Pascal
+*.dpr linguist-language=Pascal
+*.lpr linguist-language=Pascal
+*.lpi linguist-language=Pascal
+
+
